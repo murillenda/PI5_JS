@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Soma com forms</title>
+</head>
+<body>
+    <h3>Formulário de soma</h3>
+
+    <form name="formulario" action=" " method="post">
+        Entre com o valor 1: <input type="text" name="f_n1"><p></p>
+        Entre com o valor 2: <input type="text" name="f_n2"><p></p>
+        <input type="button" name="btn_somar" value="Somar" onclick="soma()"/>
+        <input type="reset" name="btn_apagar" value="Apagar"/>
+    </form>
+
+    <script language="javascript">
+        var js_n1;
+        var js_n2;
+        var js_soma;
+
+        function soma(){
+            js_n1 = parseInt(document.formulario.f_n1.value);
+            js_n2 = parseInt(document.formulario.f_n2.value);
+
+            js_soma = js_n1 + js_n2;
+
+            window.alert('Resultado da Somatoria: ' + js_soma.toString());
+        }
+    </script>
+</body>
+</html>
