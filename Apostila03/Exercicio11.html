@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Converter string</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta charset="utf-8"/>
+</head>
+<body>
+    <h3>Formul&aacute;rio de Consulta de Curso:</h3>
+    <p>
+    <form name="formcurso" action="" method="post">
+	    Digite seu Curso: <input type="text" name="f_cursodig" size="8" maxlength="4" /> (SIST) <p></p>
+	    <input type="button" name="btn_validar" value="validar" onclick="cadcurso()" />
+	    <input type="reset" name="btn_cancelar" value="cancelar" /><p></p>
+	C&oacute;digo do curso: <input type="text" name="f_codcurso" size="15" maxlength="10" />
+    </form>
+
+<script language="JavaScript">
+var js_cursodig;
+function cadcurso() {
+    js_cursodig=document.formcurso.f_cursodig.value;
+    if (js_cursodig.toUpperCase()=='SIST') {
+	document.formcurso.f_codcurso.value='SIST001/FB';
+    }
+    else {
+	window.alert('Curso Invalido!');
+    }
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Operador</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta charset="utf-8"/>
+</head>
+<body>
+
+<script language="JavaScript">
+
+document.write('<p>--------------------------...');
+document.write('<p>DEFINICAO E ATRIBUICAO DE VARIAVEIS:');
+document.write('<p>var js_num = <b>30</b>; (js_num recebe valor 30)');
+var js_num = 30;
+
+document.write('<p>--------------------------...');
+document.write('<p>OPERADOR TERNARIO <b>(? :)>/b> com OPERADORES RELACIONAIS (==, !=,<):');
+
+document.write('<p>js_num <b>==</b> 20 <b>?</b> "SIM" <b>:</b> "NAO" - Resposta => ');
+	((js_num == 20) ? document.write('<b>SIM</b>') : document.write('<b>NAO</b>'));
+
+document.write('<p>js_num <b>!=</b> 20 <b>?</b> "SIM" <b>:</b> "NAO" - Resposta => ');
+	((js_num != 20) ? document.write('<b>SIM</b>') : document.write('<b>NAO</b>'));
+
+document.write('<p>js_num <b><</b> 20 <b>?</b> "SIM" <b>:</b> "NAO" - Resposta => ');
+	((js_num < 50) ? document.write('<b>SIM</b>') : document.write('<b>NAO</b>'));
+
+
+document.write('<p>--------------------------...');
+document.write('<p>OPERADOR TERNARIO com EXPRESSAO ARITIMENTICA:');
+
+
+document.write('<p>(js_num <b>-</b> 20) <b>==</b> 0 <b>?</b> "SIM" <b>:</b> "NAO" - Resposta => ');
+	((js_num - 20) == 0) ? document.weite('<b>SIM</b> + js_num') : document.write('<b>NAO</b>');
+
+</script>
+</body>
+</html>

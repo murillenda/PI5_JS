@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>If</title>
+<meta http-equiv="Content-Type" content="text/html; ">
+<meta charset="utf-8"/>
+</head>
+<body>
+
+<script language="JavaScript">
+
+var js_n1;
+var js_n2;
+var js_n3;
+
+js_n1 = parseInt(window.prompt ('informe o primeiro numero: ', '00'));
+js_n2 = parseInt(window.prompt ('informe o segundo numero: ', '00'));
+
+document.write('numero 1 digitado = ' + js_n1);
+document.write('<br>numero 2 digitado = ' +js_n2);
+
+	if(js_n1 > js_n2){
+		js_n3 = js_n1;
+		js_n1 = js_n2;
+		js_n2 = js_n3;
+	}
+
+document.write('<p><b>Classificaçao em Ordem Crescente:</b>' +js_n1 + ' e ' +js_n2);
+
+</script>
+</body>
+</html>
